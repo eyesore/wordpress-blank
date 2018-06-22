@@ -14,18 +14,6 @@
 
 <?php wp_head(); ?>
 
-<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-	jQuery(document).ready( function() {
-		jQuery('.slider').slick({ dots: false, arrows: false,
-			responsive: [{ breakpoint: 768, settings: { arrows: false, centerMode: true, centerPadding: '0', slidesToShow: 1 } }, { breakpoint: 480, settings: { arrows: false, centerMode: true, centerPadding: '0', slidesToShow: 1 } }] });
-		// jQuery('a[href^="http://"], a[href^="https://"], a[href^="//"]').not('a[href*="insertclientdomainhere.com/"]').attr('target','_blank');
-	});
-</script>
 
 </head>
 
@@ -34,15 +22,13 @@
 		<div class="wrapper">
 			<div class="top-logo">
 				<a href="<?php site_url(); ?>/">
-					<?php $yourlogo = get_theme_mod( 'your_theme_logo' ); $logoalt = get_bloginfo( 'name', 'display' ); 
-					if ( $yourlogo ) : echo '<img src="'.$yourlogo.'" alt="'.esc_attr($logoalt).'" >';
-					else : echo '<img src="'.get_template_directory_uri().'/images/ryan-montgomery-attorney.png" alt="Ryan Montgomery Attorney at Law, Columbia South Carolina">'; endif; ?>
+					<?php echo eye_get_theme_logo(); ?>
 				</a>
 			</div>
 			<div class="right-section">
 				<div class="top-phone">
-					<?php $yourPhone = get_theme_mod( 'phone_number' ); ?>
-					<a href="tel:<?php echo $yourPhone; ?>"><?php echo $yourPhone; ?></a></div>
+					<?php echo eye_get_phone_link(); ?>
+				</div>
 			</div> 		
 		</div>		
 		<div class="clear"></div>
