@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/*   
+Theme Name: ______ Theme
+Theme URI: http://www.##.com
+Description: This is a WordPress Theme template 
+Author: JS
+Author URI: http://www.##.com
+Version: 1
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+	font-size: 18px;
+	color: #58585a;
+	font-family: 'Quattrocento', serif;
+}
+h1{
+	font-size: 40px;
+	font-weight: normal;
+	color: #58585a;
+}
+h2{
+	font-size: 32px;
+	font-weight: normal;
+	color: #58585a;
+}
+h3{
+	font-size: 24px;
+	font-weight: normal;
+	color: #8348ae;
+}
+h4{
+	font-size: 20px;
+	font-weight: normal;
+	color: #8348ae;
+}
+h5{
+	font-size: 18px;
+	font-weight: normal;
+	color: #8348ae;
+}
+h6{
+	font-size: 16px;
+	font-weight: normal;
+	color: #8348ae;
+}
+.visually-hidden{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+.container{
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.inner-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+.clear{
+	clear: both;
+}
+strong {
+    font-weight: bold;
+    font-size: inherit;
+    color: inherit;
+}
+em {
+    font-style: italic;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+sup{
+	font-size: 12px;
+	vertical-align: middle;
+}
+a{
+	color: #00b3e4;
+	transition: all .25s ease;
+}
+a:hover{
+	color: #0056b3;
+}
+.button, button, .btn {
+    background-color: #8348ae;
+    padding: 10px 40px;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.button:hover{
+	color: white;
+	background-color: #b265ea;
+}
+ul, ol, dl {
+    margin-left: 30px;
+}
+h1 a, h2 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+h1 strong, h2 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{
+    font-weight: bold;
+}
+h1 em, h2 em, h2 em, h3 em, h4 em, h5 em, h6 em{
+    font-style: italic;
+}
+p.smaller {
+    font-size: 14px;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+  display: inline;
+}
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+
+/*navigation*/
+.navigation {
+    display: inline-block;
+    float: right;
+    margin-top: 40px;
+}
+ul#menu-main-menu {
+    list-style-type: none;
+    margin: 0;
+}
+ul#menu-main-menu li{
+    display: inline-block;
+    position: relative;
+}
+ul#menu-main-menu > li > a {
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+ul#menu-main-menu li ul.sub-menu {
+    display: none;
+}
+ul#menu-main-menu li:hover ul.sub-menu{
+    display: block;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    margin: 0;
+    list-style-type: none;
+    z-index: 999;
+}
+ul#menu-main-menu li:hover ul.sub-menu li{
+    display: block;
+}
+ul#menu-main-menu li:hover ul.sub-menu li a{
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+/*------------------------------------*\
+    $HOMEPAGE
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+    $SUBPAGE
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+ul#menu-social-menu{
+    list-style-type: none;
+    margin: 0;
+}
+ul#menu-social-menu li{
+    margin: 0 5px;
+    display: inline-block;
+}
+.social-icon a{    
+    height: 40px;
+    width: 40px;
+    display: block; 
+}
+.facebook a{
+    background: url('images/facebook.svg') center center no-repeat;
+    background-size: contain;
+}
+.instagram a{
+    background: url('images/instagram.svg') center center no-repeat;
+    background-size: contain;
+}
+.twitter a{
+    background: url('images/twitter.svg') center center no-repeat;
+    background-size: contain;
+}
+.pinterest a{
+    background: url('images/pinterest.svg') center center no-repeat;
+    background-size: contain;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/*------------------------------------*\
+    $TYPE
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+    $MISC
+\*------------------------------------*/
+.overlay{
+    opacity: 0;
+}
+.overlay.open{
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);    
+    z-index: 98;
+}
+::selection     { background-color:#4a8ec2; color:#fff; }
+::-moz-selection{ background-color:#4a8ec2; color:#fff; }
+hr{
+    padding:0;
+    border:none;
+    height:1px;
+    background-color:#ccc;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}

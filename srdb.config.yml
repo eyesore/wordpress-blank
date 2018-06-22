@@ -1,0 +1,4 @@
+search-and-replace-db:
+	- local: http://project.bulks
+	staging: http://www.bulks.dev.php7-35.lan3-1.websitetestlink.com
+	production: http://www.bulks.com
