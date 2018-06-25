@@ -8,3 +8,6 @@ Customize theme options are registered in this file: `themes/rename-this-theme/i
 
 
 Functions that should be used within templates to output dynamic content are kept in this file: `themes/rename-this-theme/inc/template.functions.php`
+
+Theme preview in wordpress backend: `themes/rename-this-theme/screenshot.png`
+
