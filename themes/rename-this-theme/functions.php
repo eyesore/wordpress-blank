@@ -11,7 +11,6 @@
     } 
 
     function eye_wp_enqueue_styles(){
-        wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css' );
         wp_enqueue_style('wordpress', get_template_directory_uri() . '/css/wordpress.css' );
         wp_enqueue_style('bootstrapmin', get_template_directory_uri() . '/css/bootstrap.min.css' );
         wp_enqueue_style('bootstrapgridmin', get_template_directory_uri() . '/css/bootstrap-grid.min.css' );
