@@ -64,5 +64,7 @@
 
 
     /** Customizer additions. */
-    require_once(get_template_directory() . '/inc/customizer.php');
+    require_once(get_template_directory() . '/inc/customizer.functions.php');
+
+    /** Functions to be used in templates */
     require_once(get_template_directory() . '/inc/template.functions.php');

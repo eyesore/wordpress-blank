@@ -11,13 +11,11 @@
 <link rel=apple-touch-icon-precomposed href=<?php echo get_template_directory_uri(); ?>/icon.png />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-
 <?php wp_head(); ?>
-
 
 </head>
 
-<body <?php body_class(); ?>>	
+<body <?php body_class(); ?>>
 	<header>
 		<div class="wrapper">
 			<div class="top-logo">
