@@ -15,9 +15,9 @@
         wp_enqueue_style('bootstrapmin', get_template_directory_uri() . '/css/bootstrap.min.css' );
         wp_enqueue_style('bootstrapgridmin', get_template_directory_uri() . '/css/bootstrap-grid.min.css' );
         wp_enqueue_style('bootstrapreboot', get_template_directory_uri() . '/css/bootstrap-reboot.min.css' );
-        wp_enqueue_style('slick', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' );
-        wp_enqueue_style('style', get_stylesheet_uri() );
+        wp_enqueue_style('slick', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' );        
         wp_enqueue_style('bootstrap4-1-1', '//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+        wp_enqueue_style('style', get_stylesheet_uri() );
     }
     add_action('wp_enqueue_scripts', 'eye_wp_enqueue_scripts'); 
     add_action('wp_enqueue_scripts', 'eye_wp_enqueue_styles'); 
