@@ -232,7 +232,39 @@ ul#menu-social-menu li{
 /*------------------------------------*\
     $TYPE
 \*------------------------------------*/
-
+.indiv-search,
+.indiv-post{
+    margin: 30px 0;
+    border-bottom: 3px solid #555555;
+    padding-bottom: 30px;
+}
+.indiv-search:last-child,
+.indiv-post:last-child{
+    border: 0;
+}
+.post-img {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+}
+.post-inner{
+    float: left;
+    display: inline-block;
+    width: 65%;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+    text-decoration: none;
+    border: 1px solid #555555;
+    padding: 3px 5px;
+    margin: 0 5px;
+}
+.wp-pagenavi span.current{
+    background: #0475b7;
+    color: white;
+    border-color: #0475b7;
+    font-weight: normal;
+}
 
 
 
