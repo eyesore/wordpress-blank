@@ -1,4 +1,4 @@
-		<footer">			
+		<footer>			
 			<div class="container">
 				<div class="left">
 					<h4><a href="<?php site_url(); ?>/">Site Name</a></h4>

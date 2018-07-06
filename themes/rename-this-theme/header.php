@@ -17,7 +17,7 @@
 
 <body <?php body_class(); ?>>
 	<header>
-		<div class="wrapper">
+		<div class="container">
 			<div class="top-logo">
 				<a href="<?php site_url(); ?>/">
 					<?php echo eye_get_theme_logo(); ?>
@@ -27,6 +27,7 @@
 				<div class="top-phone">
 					<?php echo eye_get_phone_link(); ?>
 				</div>
+				<?php wp_nav_menu(array('menu'=>'your_menu_name_here')); ?>
 			</div> 		
 		</div>		
 		<div class="clear"></div>
