@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=6.0">
 <?php if (is_search()) { ?><meta name="robots" content="noindex, nofollow" /> <?php } ?>
 <title><?php wp_title('|',true,'right'); ?></title>
 
@@ -17,6 +17,7 @@
 
 <body <?php body_class(); ?>>
 	<header>
+		<a class="skip-main" href="#maincontent">Skip to main content</a>
 		<div class="container">
 			<div class="top-logo">
 				<a href="<?php site_url(); ?>/">
@@ -32,3 +33,4 @@
 		</div>		
 		<div class="clear"></div>
 	</header>
+	<main id="maincontent">
