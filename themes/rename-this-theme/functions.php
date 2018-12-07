@@ -1,7 +1,7 @@
 <?php
     function eye_wp_enqueue_scripts() { 
         wp_deregister_script('jquery');
-        wp_register_script('jquery', ("//code.jquery.com/jquery-3.0.0.js"), false);
+        wp_register_script('jquery', ("//code.jquery.com/jquery-3.0.0.min.js"), false);
         wp_enqueue_script('jquery');        
         wp_enqueue_script('popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array('jquery'));
         wp_enqueue_script('bootstrap4-1-1', '//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'));

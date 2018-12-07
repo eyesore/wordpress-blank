@@ -88,9 +88,9 @@ a:hover{
     border: 0;
     cursor: pointer;
 }
-.button:hover{
-	color: white;
-	background-color: #b265ea;
+.button:hover, button:hover, .btn:hover{
+    color: #8348ae;
+    background-color: white;
 }
 ul, ol, dl {
     margin-left: 30px;
@@ -146,6 +146,7 @@ ul#menu-main-menu > li > a {
 ul#menu-main-menu li ul.sub-menu {
     display: none;
 }
+
 ul#menu-main-menu li:hover ul.sub-menu{
     display: block;
     position: absolute;
@@ -154,6 +155,10 @@ ul#menu-main-menu li:hover ul.sub-menu{
     margin: 0;
     list-style-type: none;
     z-index: 999;
+}
+ul#menu-main-menu li:hover:last-child ul.sub-menu{
+    left: initial;
+    right: 0;
 }
 ul#menu-main-menu li:hover ul.sub-menu li{
     display: block;
@@ -258,7 +263,59 @@ ul#menu-social-menu li{
     border-color: #0475b7;
     font-weight: normal;
 }
-
+.nobutton,
+.slick-dots button{
+    padding: 0;
+    background: transparent;
+}
+.slick-arrow{
+    border: 0;
+}
+.slick-arrow svg{
+    height: 50px;
+}
+button.slick-prev.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 30;
+    padding: 0 10px;
+}
+button.slick-next.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 30;
+    padding: 0 10px;
+}
+.slick-dots {
+    margin: -30px auto 0;
+    list-style-type: none;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.slick-dots li{
+    display: inline-block;
+}
+.slick-dots button {
+    text-indent: -9999px;
+    border-radius: 50%;
+    border: 1px solid #007852;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+}
+.slick-dots li.slick-active button{
+    background: #007852;
+}
 
 
 
@@ -292,8 +349,12 @@ img{
     height: auto;
     vertical-align: middle;
 }
+
+/*------------------------------------*\
+    $ACCESSIBILITY
+\*------------------------------------*/
 a.skip-main {
-    left:0;
+    left:-1000px;
     position:absolute;
     top:auto;
     width:1px;

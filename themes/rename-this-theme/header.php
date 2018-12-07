@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=6.0">
+
+<!-- CHANGE THIS, WILL CHANGE THE COLOR OF THE URL BAR ON MOBILE -->
+<meta name="theme-color" content="#0075bd"/>
+
 <?php if (is_search()) { ?><meta name="robots" content="noindex, nofollow" /> <?php } ?>
 <title><?php wp_title('|',true,'right'); ?></title>
 
